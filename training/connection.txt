@@ -1,0 +1,64 @@
+<!-- <?php
+//Create connection.
+/* $con = new mysqli("localhost", "root", "", "yousefDB");
+
+//check the connection.
+if ($con->connect_error) {
+    die("Connection error!" . $con->connect_error);
+
+} else {
+    echo "connected successfully :)";
+}
+ */
+// create database.
+/* $sql = "CREATE DATABASE yousefDB";
+if ($con->query($sql) === TRUE) {
+    echo "database created successfully";
+} else {
+    echo "database didnt creat" . $con->error;
+}
+ */
+
+//insert into the table. and request the last ID.
+/* $sql = "INSERT INTO `users` (username, password) VALUES ('yousef', 123123)";
+if ($con->query($sql) === TRUE) {
+    $id_result = $con->insert_id;
+    echo "new user added successfully!" . $id_result;
+} else {
+    echo "no user added" . $sql . $con->error;
+}
+ */
+//insert many records into the table. **- dont forget ; after ) -**
+/* $sql = "INSERT INTO users (username, password) VALUES ('khalid', 'reer');";
+$sql .= "INSERT INTO users (username, password) VALUES ('ahmed', 'dasdasd');";
+$sql .= "INSERT INTO users (username, password) VALUES ('ali', 'sa');";
+$sql .= "INSERT INTO users (username, password) VALUES ('mohammed', 'das')";
+
+if ($con->multi_query($sql) === TRUE) {
+    echo "all the users have been added successfully";
+} else {
+    echo "no one added" . $sql . $con->error;
+} */
+
+//prepare and param sql 
+// prepare and bind
+/* $stmt = $con->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+$stmt->bind_param("ss", $username, $password);
+
+// set parameters and execute
+$username = "John";
+$password = "Doe";
+$stmt->execute();
+
+$username = "Mary";
+$password = "Moe";
+$stmt->execute();
+
+$username = "Julie";
+$password = "Dooley";
+$stmt->execute();
+
+echo "New records created successfully";
+//close the connection, it close auto after script end but u can end early.
+$con->close(); */
+?> -->
